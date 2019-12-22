@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dokumentacija</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="naslov"  content="dokumentacija"/>
+        <meta name="ključne riječi"  content="teretana, dokumentacija"/>
+        <meta name="autor"  content="filip gatarić"/>
+        <link rel="icon" href="slike/logo_tamni.png" type="image/gif" sizes="14x16"/>
+        <link rel="stylesheet" type="text/css" href="filgatari.css"/>	
+
+
+    </head>
+    <body>
+
+        <header>
+            <figure>
+                <img src="slike/dugi_svijetli.png" height="128" alt="logo teretane" usemap="#mapa1">
+                <map name="mapa1">
+                    <area href="index.php" 
+                          alt="pravokutnik" 
+                          coords="0,0,373,128" 
+                          shape="rect"/>
+                </map>
+            </figure> 
+        </header>
+
+
+        <nav id="izborniMeni">
+            <ul>
+                <li>
+                    <a href="index.php">Početna stranica </a>
+                </li>
+                <li>
+                    <a href="php/programi.php">Programi</a>
+                </li>
+                <li>
+                    <a href="prijava.php">Prijava </a>
+                </li>
+                <li>
+                    <a href="registracija.html">Registracija </a>
+                </li>
+                <li>
+                    <a href="o_autoru.html">O autoru </a>
+                </li>
+                <li>
+                    <a href="dokumentacija.html">Dokumentacija </a>
+                </li>
+            </ul>	
+        </nav>
+
+        <section>
+            <article>
+                <h2>Teretana</h2>
+                <h3>Kratak opis projekta</h3>
+                <p>Sustav omogućuje prijavu na programe za trening i praćenje evidencije dolazaka i napredovanja.</p>
+
+                <h3>Uloge: Neregistrirani korisnik, Registrirani korisnik / Polaznik, Moderator / Trener, Administrator</h3>
+                <h2>Detaljne upute:</h2>
+                <h3>Administrator</h3>
+                <p>
+                    Kreira vrste program vježbanja (individualni, grupni, …) i dodjeljuje moderatore.
+                    <br> Kreira kupone popusta (min 3) na koje se mogu trošiti bodovi. Prilikom kreiranja kupona mora definirati naziv, pdf dokument sa opisom i slika, a opcionalno može dodati video.
+                    <br> Administrator vidi statistike lojalnosti korisnika. Prva statistika prikazuje broj skupljenih ili potrošenih bodova po korisniku ili po vrsti akcije. Moguće je filtrirati podatke po datumu i vremenu (od-do). Također je moguće sortirati podatke po broju bodova.
+                </p>    
+                <h3>Moderator</h3>
+                <p>
+                    Kreira jednomjesečni program (snaga, izdržljivost, …) za vrstu definirajući termin vježbe (dan u tjednu, koji mjesec, vrijeme i broj polaznika). Ne smije se desiti da u jednom danu postoje dvije vježbe u isto vrijeme unutar istog programa.
+                    <br>  Može otkazati termin programa, u tom slučaju termin se oslobađa, a moderator mora definirati zamjenski termin. Korisnici se mailom automatski obavještavaju o promjeni.
+                    <br> Vodi evidenciju dolazaka i daje opis napredovanja korisnika za određeni dolazak i može zabraniti pristup nekom korisniku (npr. kada uoči da ne izvršava svoje obaveze).
+                    <br> Moderator bira kupon i definira koliko bodova je potrebno za pojedini kupon za njegov program. Prilikom odabira kupona mora definirati od kada do kada je kupon aktivan. Ako nije aktivan kupon mora biti sakriven korisnicima u tom programu.
+                    <br> Može unijeti kod za kupon i dobiva potvrdu da li takav kod postoji ili je lažan.
+                    <br> Moderator može promijeniti izgled stranice (min 3 osobine – npr. drugačija boja, drugačiji font, …) za vrstu programa kojima je moderator te se taj izgled primjenjuje na tom dijelu.
+                </p>    
+                <h3>Registrirani korisnik</h3>
+                <p>
+                    Može pregledavati programe te vidi broj slobodnih mjesta. Ukoliko mjesta ima može se prijaviti. Jednom prijavljen ne može se više ispisati.
+                    <br>  Nakon što je prijavljen može pregledavati evidencije dolazaka i opise napredovanja za svaki dolazak na kojem je bio prisutan.
+                    <br>  Vidi stranicu sa informacijom o broju skupljenih bodova. Dobiva bodove za korištenje određenih dijelova web aplikacije za minimalno pet akcija (po želji).
+                    <br>  Vidi popis aktivnih kupona u obliku galerije slika za koje ima dovoljno bodova grupirano po programu. Odabirom kupona može vidjeti dokument, sliku i video.
+                    <br>  Može dodati kupon u košaricu. Kada je zadovoljan, može potrošiti bodove za kupnju kupona u košarici. Kupljeni kuponi dobivaju generiran kod koji se može ispisati (engl. printati).
+                    <br>  Korisnik može dijeliti (eng. share) neke sadržaje (minimalno jedan) na društvenu mrežu po želji uz pomoć API-a odabranog sustava. (Opcionalno za dodatne bodove)
+                </p>    
+                <h3>Neregistrirani korisnik</h3>
+                <p>
+                    Vidi popis vrste programa i odabirom vrste vidi tri programa sa ukupno najviše dolazaka.	
+                </p>    
+            </article>
+            <hr>
+
+            <article>
+                <h2>Teretana</h2>
+                <h3>Kratak opis projekta</h3>
+                <p>Sustav omogućuje prijavu na programe za trening i praćenje evidencije dolazaka i napredovanja.</p>
+
+                <h3>Uloge: Neregistrirani korisnik, Registrirani korisnik / Polaznik, Moderator / Trener, Administrator</h3>
+                <h2>Detaljne upute:</h2>
+                <h3>Administrator</h3>
+                <p>
+                    Kreira vrste program vježbanja (individualni, grupni, …) i dodjeljuje moderatore.
+                    <br> Kreira kupone popusta (min 3) na koje se mogu trošiti bodovi. Prilikom kreiranja kupona mora definirati naziv, pdf dokument sa opisom i slika, a opcionalno može dodati video.
+                    <br> Administrator vidi statistike lojalnosti korisnika. Prva statistika prikazuje broj skupljenih ili potrošenih bodova po korisniku ili po vrsti akcije. Moguće je filtrirati podatke po datumu i vremenu (od-do). Također je moguće sortirati podatke po broju bodova.
+                </p>    
+                <h3>Moderator</h3>
+                <p>
+                    Kreira jednomjesečni program (snaga, izdržljivost, …) za vrstu definirajući termin vježbe (dan u tjednu, koji mjesec, vrijeme i broj polaznika). Ne smije se desiti da u jednom danu postoje dvije vježbe u isto vrijeme unutar istog programa.
+                    <br>  Može otkazati termin programa, u tom slučaju termin se oslobađa, a moderator mora definirati zamjenski termin. Korisnici se mailom automatski obavještavaju o promjeni.
+                    <br> Vodi evidenciju dolazaka i daje opis napredovanja korisnika za određeni dolazak i može zabraniti pristup nekom korisniku (npr. kada uoči da ne izvršava svoje obaveze).
+                    <br> Moderator bira kupon i definira koliko bodova je potrebno za pojedini kupon za njegov program. Prilikom odabira kupona mora definirati od kada do kada je kupon aktivan. Ako nije aktivan kupon mora biti sakriven korisnicima u tom programu.
+                    <br> Može unijeti kod za kupon i dobiva potvrdu da li takav kod postoji ili je lažan.
+                    <br> Moderator može promijeniti izgled stranice (min 3 osobine – npr. drugačija boja, drugačiji font, …) za vrstu programa kojima je moderator te se taj izgled primjenjuje na tom dijelu.
+                </p>    
+                <h3>Registrirani korisnik</h3>
+                <p>
+                    Može pregledavati programe te vidi broj slobodnih mjesta. Ukoliko mjesta ima može se prijaviti. Jednom prijavljen ne može se više ispisati.
+                    <br>  Nakon što je prijavljen može pregledavati evidencije dolazaka i opise napredovanja za svaki dolazak na kojem je bio prisutan.
+                    <br>  Vidi stranicu sa informacijom o broju skupljenih bodova. Dobiva bodove za korištenje određenih dijelova web aplikacije za minimalno pet akcija (po želji).
+                    <br>  Vidi popis aktivnih kupona u obliku galerije slika za koje ima dovoljno bodova grupirano po programu. Odabirom kupona može vidjeti dokument, sliku i video.
+                    <br>  Može dodati kupon u košaricu. Kada je zadovoljan, može potrošiti bodove za kupnju kupona u košarici. Kupljeni kuponi dobivaju generiran kod koji se može ispisati (engl. printati).
+                    <br>  Korisnik može dijeliti (eng. share) neke sadržaje (minimalno jedan) na društvenu mrežu po želji uz pomoć API-a odabranog sustava. (Opcionalno za dodatne bodove)
+                </p>    
+                <h3>Neregistrirani korisnik</h3>
+                <p>
+                    Vidi popis vrste programa i odabirom vrste vidi tri programa sa ukupno najviše dolazaka.	
+                </p>
+
+                <h2>Popis i opis datoteka i skripata</h2>
+
+                <h3>CRUD</h3>
+                <p>LEGENDA:</p>
+                <p>imeTablice.php = prikaz podataka i tablice imeTablice</p>
+                <p>frm_imeTablice_dodaj.php = forma za dodavanje novih podataka u tablicu imeTablice</p>
+                <p>frm_imeTablice_uredi.php = forma za uređivanje postojećih podataka u tablici imeTablice</p>
+                <p>frm_imeTablice_brisi.php = forma za brisanje postojećih podataka iz tablice imeTablice</p>
+                <p>imeTablice_dodaj.php = skripta za dodavanje novih podataka u tablicu imeTablice</p>
+                <p>imeTablice_uredi.php = skripta za uređivanje postojećih podataka u tablici imeTablice</p>
+                <p>imeTablice_brisi.php = skripta za brisanje postojećih podataka iz tablice imeTablice</p>
+
+                <h3>php</h3>
+                <p>baza.class.php - klasa za rad s bazom podataka</p>
+                <p>bloiraj.php - skripta kojom admin blokira određenog registriranog korisnika</p>
+                <p>bodovi.php - skripta koja vraća broj bodova za određenog korisnika</p>
+                <p>captcha.php - skripta koja provjerava CAPTCHA</p>
+                <p>cookie.php - skripta koja nakon uspješne registracije sprema username u kolačić</p>
+                <p>dodaj_u_kosaricu.php - skripta koja dodaje odabrani kupon u tablicu Košarica</p>
+                <p>dodaj_u_program.php - skripra koja dodaje korisnika u odabrani program</p>
+                <p>dodjeli_moderatora.php - skripta koja omogućuje administratoru da korisniku dade status moderatora</p>
+                <p>evidencija.php - skripta koja prikazuje korisniku broj dolazaka i napredak po terminu</p>
+                <p>frm_blokiraj.php - forma za unos podataka korisnika koji se želi blokirati</p>
+                <p>frm_dodjeli_moderatora.php - forma u koju se unose podaci korisnika kojeg se želi postaviti za moderatora</p>
+                <p>frm_otkljucaj.php - forma za unos podataka korisnika kojeg se želi otključat</p>
+                <p>kosarica.php - spkripta za ispis svih artikala u košarici korisnika</p>
+                <p>kreiraj_moderatora.php - skripta u kojoj admin kreira novog moderatora</p>
+                <p>kupon.php - skripta za ispis svih dostupnih kupona</p>
+                <p>otkljucaj.php - skripta za otkljucavanje korisnika od strane administratora</p>
+                <p>otkljucavanje_blokiranje.php - prikaz svih korisnika sa statusima (aktivan, neaktivan, zaključan)</p>
+                <p>pomak.php - skripta za pomak vremena u virtualnom vremenu</p>
+                <p>prijava_dva_koraka.php - skripta koja se poziva kada je korisnik odabrao prijavu u dva koraka</p>
+                <p>prijava_odjava.php - skripta za odjavu korisnika i brisanje kolačića</p>
+                <p>prijava_potvrda_prijave.php - skripta koja provjerava kod prijave klikom na kod koji korisnik dobi u mailu</p>   
+                <p>programi.php - skripta koja ispisuje sve programe </p>
+                <p>provjeri_kupon.php - skripta koja omogućuje moderatoru da provjeri da li je kod kupona važeći ili nije</p>
+                <p>registracija_aktivacija_mail.php - provjerava da li su podaci u registracijskom kodu poslanom na mailu točni</p>
+                <p>registracija_mail.php - provjerava se da li je unešen mail slobodan ili zauzet</p>
+                <p>registracija_unos.php - unos podataka iz forme za registraciju u bazu podataka</p>
+                <p>registracija_username.php - provjerava da li je unešeno korisničko ime dostupno ili zauzeto</p>
+                <p>serigracija_validacijaS.php - validacija korisničkog unosa na formi za registraciju sa serverske strane</p>
+                <p>statistika.php - </p>
+                <p>zaboravljena_lozinka.php - skripta koja šalje na mail korisnika novu lozinku</p>
+
+                <h3>privatno</h3>
+                <p>.htaccess - datoteka za autorizaciju</p>
+                <p>korisnici.php - datoteka za ispis svih korisnika i njihovih podataka</p>
+                <p>korisnici.txt - datoteka s korisnicima za autorizaciju pomoću .htaccess</p>
+
+                <h3>slike</h3>
+                <p>datoteka u kojoj su spremljene sve slike koje se koriste na stranici</p>
+
+                <h3>Ostalo</h3>
+                <p>admin.php - stranica koja prikazuje sve funkcionalnosti koje admin može koristiti</p>
+                <p>admin_crud.html - stranica na kojoj su prikazane sve tablice iz baze koje admin može mijenjati</p>
+                <p>dokumentacija.html - stranica na koj je prikazana dokumentacija projekta</p>
+                <p>filgatari.css - datoteka stilskih uređenja koja se koristi na cijelom projektu</p>
+                <p>index.php - početna stranica</p>
+                <p>korisnik.php - stranica na kojoj registrirani korisnik vidi sve njemu dostupne funkcionalnosti</p>
+                <p>kosarica.js - daje feedback korisniku vezan uz odabir proizvoda</p>
+                <p>moderator.php - strancica na kojoj moderator vidi sve njemu doostupne funkcionalnosti</p>
+                <p>o_autoru.html - stranica sa podacima o autoru</p>
+                <p>pregled_programa.php - pregled dosupnih programa</p>
+                <p>prijava.php - forma za prijavu korisnika</p>
+                <p>prijava.js - podatke prijave prosljeđuje skripti cookie.php ili prijava_dva_koraka.php ovisno o odabiru korisnika</p>
+                <p>registracija.html - forma u kojoj korisnik unosi podatke za registraciju</p>
+                <p>registracija.js - provjerava unos podataka u formu</p>
+                <p>sortiranje.js - sortira podatke u tablici ovisno o odabranom stupcu</p>
+                <p>zaboravljena_lozinka.html - forma za zaboravljenu lozinku u kojoj korisnik unosi svoje korisničko ime</p>
+
+                <h3>Vanjske biblioteke/moduli</h3>
+                <p>https://www.google.com/recaptcha/api.js - biblioteka za uključivanje provjere kontrolnog niza znakova za sprječavanje automata</p>
+                <p>http://barka.foi.hr/WebDiP/pomak_vremena/pomak.php?format=json - skripta za generiranje pomaka virtualnog vremena</p>
+
+                <hr>
+            </article>
+            <h2>Korištene tehnologije</h2>
+            <p>Alat za izradu projekta: NetBeans IDE 8.2</p>
+            <p>Korištene tehnologije: HTML, CSS, PHP, Javascript, MySQL, Ajax</p>
+            <p>Korišteni preglednici: Mozilla Firefox, Google Chrome</p>
+            <hr>
+
+            <h2>ERA</h2>
+            <img src="slike/era.png" alt="ERA">
+            <hr>
+
+            <h2>Dijagram aktivnosti</h2>
+            <img src="slike/Dijagram.png" alt="dijagram">
+            <hr>
+        </section>  
+        <footer id="footer"> 
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016_projekti%2FWebDiP2016x041%2Fdokumentacija.html" target="_blank">
+                <img src="slike/HTML5.png" alt="HTML5 logo" width="40" height="40" style="margin-top:10px">
+            </a>
+            <img style="margin-bottom:0px;" src="slike/CSS3.png" alt="CSS3 logo" width="40" height="40">
+            <p style="margin-bottom:0px; margin-top:0px">Vrijeme izrade početnog elementa:5 sati</p>
+        </footer>
+    </body>
+</html>

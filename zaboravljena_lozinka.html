@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Prijava</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="naslov"  content="prijava"/>
+        <meta name="ključne riječi"  content="teretana, prijava"/>
+        <meta name="autor"  content="filip gatarić"/>
+        <link rel="icon" href="slike/logo_tamni.png" type="image/gif" sizes="14x16"/>
+        <link rel="stylesheet" type="text/css" href="filgatari.css"/>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script language ="JavaScript" type="text/javascript" src="prijava.js"></script>
+        <?php include 'php/cookie.php'; ?>
+
+
+
+    </head>
+    <body>
+
+        <header>
+            <figure>
+                <img src="slike/dugi_svijetli.png" height="128" alt="logo teretane" usemap="#mapa1">
+                <map name="mapa1">
+                    <area href="index.php" 
+                          alt="pravokutnik" 
+                          coords="0,0,373,128" 
+                          shape="rect"/>
+                </map>
+            </figure> 
+        </header>
+
+
+        <nav id="izborniMeni">
+            <ul>
+                <li>
+                    <a href="index.php">Početna stranica </a>
+                </li>
+                <li>
+                    <a href="programi.html">Programi</a>
+                </li>
+                <li>
+                    <a href="prijava.php">Prijava </a>
+                </li>
+                <li>
+                    <a href="registracija.html">Registracija </a>
+                </li>
+                <li>
+                    <a href="o_autoru.html">O autoru </a>
+                </li>
+                <li>
+                    <a href="dokumentacija.html">Dokumentacija </a>
+                </li>
+            </ul>	
+        </nav>
+        <section>
+            <form action="php/zaboravljena_lozinka.php" 
+                  method="post" id="Prijava" name="prijava">
+                <label>Korisničko ime:</label>
+                <input type="text" name="korisničko_ime" placeholder="Korisničko ime">
+                <br>
+                <input type="submit" value="Šalji">
+            </form> 
+
+        </section>
+
+        <footer id="footer"> 
+            <a href="https://validator.w3.org/check?uri=https://barka.foi.hr/WebDiP/2016/zadaca_01/filgatari/prijava.html" target="_blank">
+                <img src="slike/HTML5.png" alt="HTML5 logo" width="40" height="40" style="margin-top:10px">
+            </a>
+            <img style="margin-bottom:0px;" src="slike/CSS3.png" alt="CSS3 logo" width="40" height="40">
+            <p style="margin-bottom:0px; margin-top:0px">Vrijeme izrade početnog elementa:30 minuta</p>
+        </footer>
+    </body>
+</html>

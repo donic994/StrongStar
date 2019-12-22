@@ -1,0 +1,344 @@
+/* Glavna CSS datoteka*/
+body{
+        font-family: "Helvetica";
+		font-size: 16px;
+		background-image:url("slike/uzorak_trokut.png");
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+    }
+	
+	
+#footer{
+    color:white;
+	margin-bottom: 0px;
+    clear:both;
+    text-align: center; 
+	font-family:"Helvetica";
+}
+	
+header{
+    background-color: #3c3c3c;
+    margin: 0 0 0 0;
+}
+header figure{
+    background-color: #3c3c3c;
+    margin: 0 0 0 0;
+}
+header figure img{
+    margin-left: 35%;
+    margin-top:15px;
+
+}
+section{
+	padding-left:20px;
+	padding-top:20px;
+	padding-right:20px;
+}
+
+
+footer {
+    bottom:0;
+    background-color: #efefef;
+    text-align: center;
+    background:#3c3c3c;
+    border-top:6px solid #44964b;
+    color: #edf2f2;
+	width:100%;
+	margin-bottom: 0px;
+}
+
+.slika {
+    background: transparent;
+    border: 10px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    box-shadow: 10px 10px 5px #888888;
+    display: block;
+}
+
+label{
+	display: inline-block;
+	width: 140px;
+	text-align: right;
+	position:relative;
+	left:0%;
+
+}
+
+#izborniMeni {
+    float:left;
+    width:100%;
+    background:#3c3c3c;
+    border-bottom:6px solid #44964b;
+    overflow:hidden;
+    position:relative;
+    font-size: 20px;
+}
+#izborniMeni ul {
+    clear:left;
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:relative;
+    left:50%;
+    text-align:center;
+    font-size: 100%;
+}
+#izborniMeni ul li {
+    display:block;
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:relative;
+    right:50%;
+}
+#izborniMeni ul li a {
+    display:block;
+    margin:0 0 0 1px;
+    padding:10px 20px;
+    background:#3c3c3c;
+    color:#edf2f2;
+    text-decoration:none;
+    line-height:1.3em;
+}
+#izborniMeni ul li a:hover {
+    background:#44964b;
+    color:white;
+}
+
+#izborniMeniul li a.active:hover {
+    color:white;
+    font-weight:bold;
+}
+
+#osobniPodaci {
+    float:left;
+    background:#3c3c3c;
+    border-bottom:6px solid #44964b;
+    overflow:hidden;
+    position:relative;
+    font-size: 20px;
+}
+
+
+input[type=text],select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=email], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    background-color: #44964b;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:disabled {
+    background-color: #B33131;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=date],select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=time],select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=range],select {
+    padding: 12px 20px;
+    margin: 8px 2px;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea, select{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+    background-color: #70bf73;
+}
+input[type=submit]:hover:disabled {
+    background-color: #A64646;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 100px;
+    border: 1px;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #44964b;
+    color: white;
+	text-align: center;
+}
+th, a{
+	color:white;
+	text-decoration:none;
+}
+
+
+.dodaj {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+.brisi  {
+    background-color: #af4c4c;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+.uredi {
+    background-color: #03a9f4;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+#gumbici{
+    clear:both;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+#gumbici form{
+    margin-left: 10px;
+        float:left;
+}
+
+#odabir  ul {
+    clear:both;
+    float:left;
+    list-style-type: none;
+    width: 140px;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: block;
+}
+ 
+#odabir h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+ 
+#odabir  li img {
+  float: left;
+  margin: 0 15px 0 0;
+  height: 100px;
+  width: 100px;
+}
+ 
+#odabir  li p {
+  font: bold 200 18px/1.5 Verdana, Helvetica, sans-serif;
+  color: forestgreen;
+}
+ 
+#odabir  li {
+  padding-left: 20px;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: auto;
+  width: 120px;
+  background-color: #3c3c3c;
+  border-radius: 20px;
+  display: block;
+}
+ 
+#odabir  li:hover {
+  background: #575757;
+  cursor: pointer;
+}
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  11.11%   { opacity: 1; }
+  33.33%  { opacity: 1; }
+  44.44%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.fadein { clear:both; height:700px; width:1500px; }
+.fadein img { position:absolute; left:0; right:0; opacity:0; animation-name: fade; animation-duration: 12s; animation-iteration-count: infinite; }
+.fadein img:nth-child(1) { animation-delay: 0s;  }
+.fadein img:nth-child(2) { animation-delay: 4s;  }
+.fadein img:nth-child(3) { animation-delay: 8s;  }

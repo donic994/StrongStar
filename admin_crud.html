@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>Admin CRUD</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="naslov"  content="crud"/>
+        <meta name="ključne riječi"  content="teretana, crud"/>
+        <meta name="autor"  content="filip gatarić"/>
+        <link rel="icon" href="slike/logo_tamni.png" type="image/gif" sizes="14x16"/>
+        <link rel="stylesheet" type="text/css" href="filgatari.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="registracija.js"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <?php include 'php/admin_crud.php'; ?>
+
+    </head>
+    <body>
+
+        <header>
+            <figure>
+                <img src="slike/dugi_svijetli.png" height="128" alt="logo teretane" usemap="#mapa1">
+                <map name="mapa1">
+                    <area href="index.php" 
+                          alt="pravokutnik" 
+                          coords="0,0,373,128" 
+                          shape="rect"/>
+                </map>
+            </figure> 
+        </header>
+
+
+     <nav id="izborniMeni">
+            <ul>
+                <li>
+                    <a href="index.php">Početna stranica </a>
+                </li>
+                <li>
+                    <a href="php/programi.php">Programi</a>
+                </li>
+                <li>
+                    <a href="prijava.php">Prijava </a>
+                </li>
+                <li>
+                    <a href="registracija.html">Registracija </a>
+                </li>
+                <li>
+                    <a href="o_autoru.html">O autoru </a>
+                </li>
+                <li>
+                    <a href="dokumentacija.html">Dokumentacija </a>
+                </li>
+                <li>
+                    <a href="admin.php">Admin</a>
+                </li>
+                  <li>
+                    <a href="moderator.php">Moderator</a>
+                </li>
+                <li>
+                    <a href="korisnik.php">Korisnik</a>
+                </li>
+            </ul>	
+        </nav>
+
+
+        <div id="gumbici">
+            <form action="php/CRUD/dnevnik_rada.php" method="post" >
+                <input type="submit" value="Dnevnik rada">
+            </form>
+            <form action="php/CRUD/evidencija.php" method="post">
+                <input type="submit" value="Evidencija">
+            </form>
+            <form action="php/CRUD/konfiguracija.php" method="post" >
+                <input type="submit" value="Konfiguracija sustava">
+            </form>
+            <form action="php/CRUD/korisnik.php" method="post" >
+                <input type="submit" value="Korisnik">
+            </form>
+        </div>
+        <div id="gumbici">
+            <form action="php/CRUD/kosarica.php" method="post" >
+                <input type="submit" value="Košarica">
+            </form>
+            <form action="php/CRUD/korisnik_kupon.php" method="post" >
+                <input type="submit" value="Korisnik_has_Kupon">
+            </form>
+            <form action="php/CRUD/kupon.php" method="post" >
+                <input type="submit" value="Kupon">
+            </form>
+            <form action="php/CRUD/polaznost.php" method="post" >
+                <input type="submit" value="Polaznost">
+            </form>
+        </div>
+        <div id="gumbici">
+            <form action="php/CRUD/pristup.php" method="post" >
+                <input type="submit" value="Pristup">
+            </form>
+            <form action="php/CRUD/program.php" method="post" >
+                <input type="submit" value="Program">
+            </form>
+            <form action="php/CRUD/statistika.php" method="post" >
+                <input type="submit" value="Statistika">
+            </form>
+            <form action="php/CRUD/teretana.php" method="post" >
+                <input type="submit" value="Teratana">
+            </form>
+        </div>
+        <div id="gumbici">
+            <form action="php/CRUD/termin.php" method="post" >
+                <input type="submit" value="Termin">
+            </form>
+            <form action="php/CRUD/tip_korisnika.php" method="post" >
+                <input type="submit" value="Tip_korisnika">
+            </form>
+        </div>
+
+
+    </body>
+</html>
